@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.newPacktitulo{ 
+    color: blue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10vh;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;    
+
+}
+
+.newPacksubtitulosGrandes{
+        color: blue;
+        text-transform:uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 8vh;
+    
+
+}
+
+.newPacksubtitulosChicos{
+    color: grey;
+    font-size: 6vh;
+
+}
+
+.newPackTextos{
+    color: black;
+    font-size: 4vh;
+
+}
+
+.medioAmbientetextos{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: italic;
+    
+}
+
+
+
+.textoIndex{
+    color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: large;
+    text-align: center;
+    line-height: 200%;
+    
+}
+
+header{
+    height: 20vh;
+    position: relative;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+.contenedor__navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-wrap:nowrap;
+    padding: 2%;
+    
+    height: 15vh;
+
+}
+
+
+.logo{
+    width: 130px;
+
+}
+
+
+.contenedor__lista ul li{
+    display: inline-block;
+    margin: 0,9%;
+    
+    
+}
+
+.contenedor__lista ul li ul{
+    position: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+   
+}
+
+.contenedor__lista li ul li{
+    position: relative;
+
+}
+
+.contenedor__lista ul li:hover > ul{
+    display: block;
+}
+
+.contenedor__lista ul li a{
+    text-decoration: none;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+     
+
+}
+
+.contenedor__lista ul li a:hover{
+    color: orange;
+    
+
+}
+
+.contenedor__lista ul li a img{
+    height: 30px;
+    width: 30px;
+}
+
+
+/*main*/
+
+main{
+    min-height: 100vh;
+}
+
+
+.inicio__main{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    
+   /* background-image: url(./imagenes/logoNewpack.png);
+    background-repeat: repeat;
+    background-size: 100px ;
+  
+
+
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;*/
+   
+}
+
+.inicio__main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja__grid{
+    
+    border: 1px solid blue;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10vh 50vh 50vh;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "subtitulo texto video"
+    "imagen1 imagen2 imagen3"
+    ;
+  
+}
+
+.video{
+    grid-area: video;
+}
+
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+}
+
+
+
+
+.imagen1{
+    grid-area: imagen1;
+ 
+}
+
+.imagen1 img{   width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.imagen2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.imagen2{
+    grid-area: imagen2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.imagen3{
+    grid-area: imagen3;
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.imagen3 img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/*medioAmbiente*/
+
+.medioAmbiente__body{
+
+    /*
+    margin-left: 2%;
+    margin-right: 2%;
+
+*/
+}
+
+span{
+    color: green;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    
+}
+
+.medioAmbiente__cajaGrande{
+    
+    
+    background: linear-gradient( to bottom, white, white, green)  ;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh 5vh 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "subtitulo subtitulo"
+    "texto imagen"
+    ;
+   
+}
+
+.medioAmbiente__h2{
+    grid-area: titulo;
+    text-align: center;
+    padding-top: 5vh;
+
+}
+
+.medioAmbiente__h3{
+    grid-area: subtitulo;
+    justify-self: center;
+}
+
+.medioAmbiente__texto{
+    grid-area: texto;
+    align-self:center;
+    
+}
+
+.medioAmbiente__imagen{
+    grid-area: imagen;
+    align-self:center;
+}
+
+
+.medioAmbiente__imagen{
+    
+}
+
+
+.medioAmbiente__imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*productos*/
+
+
+
+.productos__subtitulos{
+    font-size: 4vh;
+
+}
+
+.productos__textos{
+    font-size: 3vh;
+    
+    
+
+
+}
+
+.productos__section{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.productos__section div{
+    text-align: center;
+}
+
+.productos__section img{
+    width: 80%;
+   
+}
+
+/*potes*/
+
+.productos__fotosPotesimagenes{
+    margin-top: 5vh;
+    
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+
+  
+}
+
+
+
+.productos__fotosPotes img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.productos__fotosPote{
+    
+}
+
+.productos__fotosPotesimagenes img:hover{
+    transform: scale(150%);
+   
+    
+}
+
+
+/*contenedores*/
+
+.productos__fotosContenedor{
+
+}
+
+
+.productos__fotoscontenedorimagenes{
+
+
+
+}
+
+.productos__fotosContenedorimagenesChicas{
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+/*Contacto*/
+
+.main__contacto{
+    height: 30vh;
+}
+
+/*footer*/
+
+.footer__contenedor{
+    border: 1px solid blue;
+    background-color: black;
+    
+    margin-top: 50px;
+}
+
+.footer__lista ul{
+    text-align: center;
+}
+
+
+.footer__lista ul li{
+    color: white;
+    display: inline-block;
+    
+    
+    
+}
+
+.footer__lista ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+
+}
+
+.footer__lista ul li a:hover{
+    color: orange;
+
+}
+
+.footer__redes{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    color: orange;
+    display: i;
+}
+
+
+
+.footer__redes ul li{
+    list-style-type: none;
+    height: 50px;
+    display: inline-block;
+    
+    
+}
+
+.footer__redes ul li a img{
+    width: 40px;
+    height: 50px;
+}
+.footer__redes ul li a{
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+}
+
+/*tablet*/
+
+
+    
+
+
+@media screen and (max-width: 1024px) {
+
+    .caja__grid{
+    
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10vh 50vh 50vh;
+        grid-template-areas:
+        "titulo titulo"
+        "subtitulo video"
+        "imagen1 imagen2"
+        ;
+      
+    }
+
+    .titulo{
+        display: none;
+    }
+
+
+    .video{
+        grid-area: video;
+    }
+    
+    .textoIndex{
+        display: none;
+    }
+    
+    .video iframe{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .titulo{
+        grid-area: titulo;
+        text-align: center;
+    }
+    
+    .subtitulo{
+        grid-area: subtitulo;
+    }
+    
+    
+    .imagen1{
+        grid-area: imagen1;
+     
+    }
+    
+    .imagen1 img{   width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+    }
+    
+    .imagen2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+    }
+    
+    .imagen2{
+        grid-area: imagen2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    
+    .imagen3{
+        grid-area: imagen3;
+          width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    
+    .imagen3 img{
+    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+
+
+
+
+
+
+    
+}
+
+
+
+/*mobil*/
+
+
+
+@media screen and (max-width: 500px) {
+
+    header{
+        height: 22vh;
+    
+    }
+
+    .textoIndex{
+        text-align:end;
+
+
+    }
+
+    .inicio__main img{
+    
+        height: 0vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+
+    
+
+
+    .caja__grid{
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 20vh 50vh 50vh 50vh 50vh;
+        grid-template-areas:
+        "titulo"
+        "subtitulo"
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "video"
+        ;
+      
+    }
+
+
+    .contenedor__lista ul li{
+        display: block;
+        margin: 0,9%;
+        
+        
+    }
+
+
+    .productos__fotosPotes{
+        
+        flex-direction: column;
+       
+       
+    }
+
+
+    
+
+
+
+}
